@@ -8,7 +8,7 @@ func FindOddNumber(text []int) int {
 	for _, num := range text {
 		mCount[num]++
 	}
-	// หาเลขที่ซ้ำครั้งเดียว
+	// หาเลขที่ซ้ำครั้งเป็นเลขคี่
 	for num, count := range mCount {
 		if count%2 != 0 {
 			return num
